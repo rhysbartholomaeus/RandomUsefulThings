@@ -4,9 +4,9 @@
 .SYNOPSIS
   Small wrapper script for the winget functionality in Windows
 .DESCRIPTION
-  Uses the 'winget' feature of Windows to download and install VIM.
-  Adds the default VIM install directory to the Windows SYSTEM path
-  Sets an alias to allow users to invoke VIM using 'vi'
+  Uses the 'winget' feature of Windows to download and install the target package.
+  Adds the target install directory to the Windows SYSTEM path.
+  Sets an alias to allow users to invoke the target using an alias
 .NOTES
   Version:        1.0
   Author:         RJB
@@ -38,7 +38,7 @@ $ErrorActionPreference = "Stop"
 
 $ProcessError = $null
 
-#---------------------------------------------------[Script]-------------------------------------------------------------------
+#----------------------------------------------------[Script]------------------------------------------------------------------
 Try {
   Write-Output "Using winget to install $PACKAGE_ID..."
   winget install --silent --id $PACKAGE_ID
@@ -52,6 +52,7 @@ Try {
         [EnvironmentVariableTarget]::Machine) + ";$PATH_AMENDMENT",
         [EnvironmentVariableTarget]::Machine)
   }
+  # Add the requested alias to the Current User profile for PowerShell
   if($ALIAS_AMENDMENT){
     Write-Output "Adding alias $ALIAS_AMENDMENT to %USERPROFILE% PowerShell profile..."
     Add-Content -Path $ENV:UserProfile\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1 -Value "Set-Alias $ALIAS_AMENDMENT"
