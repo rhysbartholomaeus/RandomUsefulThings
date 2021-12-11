@@ -1,0 +1,107 @@
+{
+	"$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh3/main/themes/schema.json",
+	"blocks": [
+		{
+			"type": "prompt",
+			"alignment": "left",
+			"segments": [
+				{
+					"type": "os",
+					"style": "diamond",
+					"foreground": "#000000",
+					"background": "#2399c7",
+					"leading_diamond": "\uE0B6",
+					"trailing_diamond": "\uE0B4"
+				},
+				{
+					"type": "root",
+					"style": "powerline",
+					"foreground": "#000000",
+					"background": "#083968",
+					"powerline_symbol": "\uE0B4",
+					"properties": {
+						"style": "full"
+					}
+				},
+				{
+					"type": "path",
+					"style": "powerline",
+					"foreground": "#000000",
+					"background": "#2399c7",
+					"powerline_symbol": "\uE0B4",
+					"properties": {
+						"style": "full"
+					}
+				},
+				{
+					"type": "git",
+					"style": "powerline",
+					"foreground": "#ebebeb",
+					"background": "#8d0000",
+					"powerline_symbol": "\uE0B4",
+					"properties": {
+						"template": "{{ .HEAD }}"
+					}
+				}
+			]
+		},
+		{
+			"type": "prompt",
+			"alignment": "right",
+			"segments": [
+				{
+					"type": "python",
+					"style": "diamond",
+					"foreground": "#000000",
+					"background": "#e48d0a",
+					"leading_diamond": "\uE0B6",
+					"properties": {
+						"postfix": " <#000000>\uE0B6</>"
+					}
+				},
+				{
+					"type": "go",
+					"style": "diamond",
+					"foreground": "#ffffff",
+					"background": "#7FD5EA",
+					"leading_diamond": "\uE0B6",
+					"display_version": true,
+					"properties": {
+						"postfix": " <#000000>\uE0B6</>"
+					}
+				},
+				{
+					"type": "time",
+					"style": "diamond",
+					"foreground": "#000000",
+					"background": "#ffffff",
+					"leading_diamond": "\uE0B6",
+					"trailing_diamond": "\uE0B4",
+					"properties": {
+						"time_format": "15:04:05"
+					}
+				}
+			]
+		},
+		{
+			"type": "prompt",
+			"alignment": "left",
+			"newline": true,
+			"segments": [
+				{
+					"type": "exit",
+					"style": "plain",
+					"foreground": "#dadada",
+					"foreground_templates": [
+						"{{ if gt .Code 0 }}#FF5252{{ end }}"
+					],
+					"properties": {
+						"template": "\u276F",
+						"prefix": "",
+						"always_enabled": true
+					}
+				}
+			]
+		}
+	]
+}
