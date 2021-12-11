@@ -1,6 +1,8 @@
 ## Purpose
 
-This document contains settings for Windows Terminal, coupled with Oh-My-Posh
+This document contains settings for Windows Terminal, coupled with Oh-My-Posh, to provide something that looks like this:
+
+![Custom Terminal Theme using oh-my-posh](./res/terminal_screenshot.png)
 
 ### Oh-My-Posh
 
