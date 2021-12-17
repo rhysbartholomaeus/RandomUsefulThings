@@ -4,6 +4,10 @@ This document contains settings for Windows Terminal, coupled with Oh-My-Posh, t
 
 ![Custom Terminal Theme using oh-my-posh](./res/terminal_screenshot.png)
 
+Alternatively, this is the plain theme I'm currently rocking:
+
+![Custom amro Terminal Theme using oh-my-posh](./res/terminal_screenshot_amro_mod.png)
+
 ### Oh-My-Posh
 
 [Oh-My-Posh](https://ohmyposh.dev/docs/windows) details how to install the Terminal modifier.
@@ -58,6 +62,8 @@ I've used the following terminal colour scheme:
 ### Custom Oh My Posh Themes.
 
 I'm using a modified version of the Powerlevel10k_modern theme that comes with oh-my-posh. Refer to: [powerlevel10k_modded](./themes/powerlevel10k_modded.omp.json) 
+
+My secondary theme is a modified version of the Amro theme. Refer to: [amro_modded](./themes/amro.omp_modded.json).
 
 Profiles are located (by default) under: `~\AppData\Local\Programs\oh-my-posh\themes\` but they can theoretically be anywhere - just update the PowerShell `$PROFILE` to point to the correct location.
 
