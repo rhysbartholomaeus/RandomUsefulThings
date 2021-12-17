@@ -57,7 +57,7 @@ I've used the following terminal colour scheme:
 
 ### Custom Oh My Posh Themes.
 
-I'm using a modified version of the Powerlevel10k_modern theme that comes with oh-my-posh. Refer to: [powerlevel10k_modded](themes\powerlevel10k_modded.omp.json) 
+I'm using a modified version of the Powerlevel10k_modern theme that comes with oh-my-posh. Refer to: [powerlevel10k_modded](./themes/powerlevel10k_modded.omp.json) 
 
 Profiles are located (by default) under: `~\AppData\Local\Programs\oh-my-posh\themes\` but they can theoretically be anywhere - just update the PowerShell `$PROFILE` to point to the correct location.
 
