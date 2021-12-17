@@ -6,11 +6,22 @@
       "alignment": "left",
       "segments": [
         {
+          "type": "root",
+          "style": "plain",
+          "foreground": "#cd5e42",
+          "properties": {
+            "prefix": "\u0000",
+            "root_icon": "\u26A1",
+            "postfix": "\u0000"
+          }
+        },
+        {
           "type": "session",
           "style": "plain",
           "foreground": "#95FFA4",
           "properties": {
-            "template": "{{ .UserName }}"
+            "prefix": "\u0000",
+            "template": "{{.UserName}}"
           }
         },
         {
@@ -59,15 +70,6 @@
       "alignment": "left",
       "newline": true,
       "segments": [
-        {
-          "type": "root",
-          "style": "plain",
-          "foreground": "#cd5e42",
-          "properties": {
-            "prefix": "",
-            "root_icon": "\ue3bf"
-          }
-        },
         {
           "type": "text",
           "style": "plain",
