@@ -54,11 +54,8 @@
       "segments": [
         {
           "type": "time",
-          "style": "diamond",
-          "foreground": "#141228",
-          "background": "#CBE1E7",
-          "leading_diamond": "\uE0B6",
-          "trailing_diamond": "\uE0B4",
+          "style": "plain",
+          "foreground": "#CBE1E7",
           "properties": {
             "time_format": "15:04:05"
           }
